@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Nopalito</title>
+  <link rel="icon" href = '../static/images/n-logo.png'>
+  <!-- linking necessary style sheets -->
+  <link rel="stylesheet"type='text/css' href="{{url_for('static', filename='index.css')}}">
+  <link rel="stylesheet"type='text/css' href="{{url_for('static', filename='contact.css')}}">
+</head>
+<body class = 'body'>
+  <div class = 'grid'>
+    
+     <!-- nav bar -->
+     <div class = 'a'>
+      <!-- button for home page -->
+      <div class = 'buttond'>
+          <button class = 'button font_logo' ><a href="{{ url_for('index') }}"> HOME </a></button>
+      </div>
+      <!-- button for menu page -->
+     <div class = 'buttona'>
+          <button class = 'button font_logo' ><a href="{{ url_for('menu') }}"> MENU </a></button>
+     </div>
+     
+     <!-- button for contact page -->
+     <div class = buttonc>
+          <button class = 'button font_logo'> <a href="{{ url_for('contact') }}"> CONTACT </a> </button>
+     </div>
+     <div class = buttone>
+      <button class = 'button font_logo'> <a href="{{ url_for('reservation_form') }}"> BOOK </a> </button>
+    </div>
+     
+  </div>
+    <div class = 'b'>
+    <div class = 'nestedgrid'>
+      
+
+        <div class="main">
+          <div class="gallery">
+            <div class="menu-item">
+              <h1> VISIT US</h1>
+              <p class = 'thumbnail'> 
+                5 Noel Street <br>
+                Soho<br>
+                London <br>
+                W1F 8GD <br>
+              </p>
+              <h4> Closest Train Station: idk google it yea</h4>
+              <h3> Phone number: <BR>020 4065 0460 </h3>
+              <h3> Email Address: <BR> nopalitosoho@gmail.com</h3>
+              
+            </div>
+            <div class="menu-item-2">
+             <img class = 'map-img' src= "{{ url_for('static', filename='images/map.png') }}">
+            </div>
+            <div class="menu-item">
+              <h1> OPENING HOURS</h1>
+              
+              <h3 class = 'thumbnail'> <br><br>
+               Monday: 12:00 - 22:00 <br>
+               Tuesday: 12:00 - 22:00 <br>
+               Wednesday: 12:00 - 22:00 <br>
+               Thursday: 12:00 - 22:00 <br>
+               Friday: 12:00 - 23:00 <br>
+               Saturday: 12:00 - 23:00 <br>
+               Sunday: 12:00 - 22:00 <br>
+              </h3>
+            </div>
+            <div  class = 'social-media'>
+              
+              
+              
+               <h1> Find Us On Social Media:</h1>
+               <div class="social-media-nested">
+               <div class = 'social-icon'>
+                    <h1 class = 'barrio-font'>INSTAGRAM</h1>
+                    <a href="https://www.instagram.com/nopalito_soho" target="_blank">
+                      <img class='social-img' src='../static/images/instagram.png'>
+                  </a>
+               </div>
+               <div class = 'social-icon'>
+                <h1 class = 'barrio-font' >FACEBOOK</h1>
+                    <a href="https://www.facebook.com/your_facebook_username" target="_blank">
+                      <img class='social-img' src='../static/images/facebook.png'>
+                  </a>
+               </div>
+              </div>
+              
+            </div>
+            
+            
+          </div>
+        </div>
+           <!-- nav bar -->
+
+  </div>
+
+    </div>
+    </div>
+  </div>
+  
+  
+</body>
+</html>

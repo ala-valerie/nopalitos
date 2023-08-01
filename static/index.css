@@ -1,0 +1,377 @@
+
+/* styling the main body of the website */
+.body{
+    background-color: #27A3A5;
+    margin: 0;
+
+}
+
+
+@font-face {
+    font-family: 'BarrioRegular'; /* The name you want to use for your font */
+    src: url('../static/fonts/Barrio-Regular.ttf') format('truetype');
+         
+    /* Add any additional font properties if needed */
+  }
+
+.font_logo{
+    font-family: 'BarrioRegular';
+}
+
+.grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 0px;
+    column-gap: 0px;
+    margin: none;
+  }
+
+
+  
+.a {
+    display: grid;
+    grid-column: span 4;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    background-color: #e5771e;
+    display: grid; /* Add this line to make .a a grid container */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Define columns for the inner grid */
+    grid-template-rows: 1fr; /* Define rows for the inner grid */
+    box-sizing: border-box;
+} 
+
+
+
+.b {
+    grid-column: span 5;
+    grid-row-start: 2;
+    grid-row-end: 7;  
+
+}
+
+
+.background{
+    background-color: #27A3A5;
+}
+
+
+.c{
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10%;
+    }
+
+
+ 
+.buttond{
+    grid-row-start: 1; 
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    grid-column-end: span 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+
+
+.buttona{
+    grid-row-start: 1; 
+    grid-row-end: span 1;
+    grid-column-start: 2;
+    grid-column-end: span 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.buttonc {
+    grid-row-start: 1; 
+    grid-row-end: span 1;
+    grid-column-start: 3; 
+    grid-column-end: span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.buttonb {
+    grid-row-start: 1; 
+    grid-row-end: span 1;
+    grid-column-start: 4; 
+    grid-column-end: span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.buttone{
+    grid-row-start: 1; 
+    grid-row-end: span 1;
+    grid-column-start: 5; 
+    grid-column-end: span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5771e;
+    
+}
+
+.button {
+  background-color: inherit;
+  color: #5398BE;
+  height: 50%;
+  width: 55%;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  display: flex; /* Add flex display to the buttons */
+  align-items: center; /* Vertically center the button content */
+  justify-content: center; /* Horizontally center the button content */
+}
+
+
+.button a {
+    color: #C3D8BF; /* Set the text color for the anchor element */
+    text-decoration: none; /* Optional: Remove underline from the link */
+}
+
+
+.button a:hover {
+    color: #27A3A5;
+ /* Set the text color on hover */
+}
+
+
+.our-story-banner{
+    width: 100%;
+    height: 10%;
+    background-color: #2e294e !important;
+    display:flex;
+    text-align: center;
+    align-items: center; /* Vertically center the button content */
+    justify-content: center; 
+    margin: 0;
+}
+
+.our-story-banner h1{
+    margin: 0;
+    font-family: BarrioRegular;
+    color: #e5771e;
+    font-size: 4em;
+
+}
+
+
+.about-us{
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Vertically center the button content */
+    justify-content: center; 
+    font-size: 1.5em;
+    font-family: Tahoma;
+    padding: 2% 5% 2% 5%;
+    color: #2e294e;
+    border-left: 50px solid #C3D8BF;
+    border-right: 50px solid #C3D8BF;
+}
+
+
+
+.our-philosophy-banner{
+    width: 100%;
+    height: 10%;
+    background-color: #e5771e;
+    display: flex;
+    text-align: center;
+    align-items: center; /* Vertically center the button content */
+    justify-content: center; 
+    display: flex;
+    
+}
+
+
+.our-philosophy-banner h1{
+    margin: 0;
+    font-family: BarrioRegular;
+    color: #2e294e;
+    font-size: 4em;
+}
+
+.our-story-banner{
+    width: 100%;
+    height: 10%;
+    background-color: #E74F8C;
+    display:flex;
+    text-align: center;
+    align-items: center; /* Vertically center the button content */
+    justify-content: center; 
+}
+
+.book-now-banner{
+    width: 100%;
+    height: 10%;
+    background-color: #2e294e;
+    display:flex;
+    text-align: center;
+    align-items: center; /* Vertically center the button content */
+    justify-content: center; 
+    font-family: BarrioRegular;
+    color: #C3D8BF;
+    font-size: 3em;
+    margin-bottom: 0%;
+    padding: 0%;
+
+}
+
+.book-now-banner a {
+    text-decoration: none;
+    color: #C3D8BF
+}
+
+.book-now-banner a:link {
+    color: #C3D8BF
+}
+
+.book-now-banner a:visited{
+    color: #C3D8BF
+}
+
+.book-now-banner a:hover{
+    color: #27A3A5;
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .a {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+
+    .button {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .nopalito_logo{
+        font-size: 4rem !important;
+    }
+
+    .nopalito_info{
+        font-size: 1.4em !important;
+    }
+
+    .our-story-banner, .our-philosophy-banner{
+        width: 100%;
+        height: 6%;
+    }
+
+    .our-story-banner h1, .our-philosophy-banner h1{
+        font-size: 2em
+    }
+
+
+    .book-now-banner{
+        font-size: 2rem;
+    }
+
+    .about-us{
+        margin: 7%;
+        border: none;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 1200px) and (min-width: 700px){
+    .button{
+        font-size: 25px;
+    }
+
+    .nopalito_logo{
+        font-size: 7rem !important;
+    }
+
+   
+}
+
+
+
+.nopalito_logo{
+    color: #e5771e;
+    font-family: 'BarrioRegular';
+    font-size: 10em;
+    padding: 0%;
+    margin: 2%;
+}
+
+.nopalito_info{
+    color: #C3D8BF;
+    font-family: 'BarrioRegular';
+    font-size: 3em;
+    padding: 0%;
+    margin: 2%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*  THIS IS FROM HOME.CSS  */
+
+.home-info{
+    width: 50%; /* Set the width to 50% of the parent container */
+    margin: 0 auto; /* Center the div horizontally */
+    padding-left: 25%; /* Set 25% padding on the left side */
+    padding-right: 25%; /* Set 25% padding on the right side */
+    display: block;
+    
+}
+
+.nopalito-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  
+  .logo{
+      display: block;
+      width: 35%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+
+  @media (max-width: 600px) {
+    body {
+        background-image: url('images/mobile_backgroud.png');
+        background-repeat: repeat;
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+
+  }
